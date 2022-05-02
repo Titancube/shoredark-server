@@ -1,2 +1,3 @@
-# shoredark-server
+# Shoredark Server
+
 Node.js API server for shoredark-web
