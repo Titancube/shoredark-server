@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node app.ts"
+    "dev": "ts-node app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "author": "Titancube <kbin0717@gmail.com>",
   "license": "MIT",
@@ -15,5 +17,6 @@
     "ts-node": "^9.1.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }

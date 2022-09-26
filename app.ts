@@ -1,8 +1,13 @@
-import app from "./plugins/express";
+import express, { Response, Request, NextFunction } from "express";
+// import db from "./plugins/firebase";
+import fn from "./plugins/functions";
 
-// Test connection
-app.get("/api", (req, res) => {
-  res.status(200).send("done man");
+const app = express();
+
+app.get("/api", (request: Request, response: Response, next: NextFunction) => {
+  response.status(200).json({
+		yo: 'hi'
+	})
 });
 
 // Listen on port 5000

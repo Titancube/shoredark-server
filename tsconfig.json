@@ -4,7 +4,7 @@
     "target": "es2017",
     "noImplicitAny": false,
     "sourceMap": true,
-    "outDir": "build",
+    "outDir": "dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
@@ -17,11 +17,15 @@
       "es2017",
       "esnext.asynciterable"
     ],
-    "moduleResolution": "node"
+    "moduleResolution": "node",
   },
+  "include": [
+    "./app.ts",
+    "./plugins/**/*"
+  ],
   "exclude": [
     "node_modules",
     "tests",
     "examples"
-  ]
+  ],
 }
